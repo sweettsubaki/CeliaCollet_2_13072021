@@ -5,15 +5,22 @@
     <title></title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER
     Navbar items 1&2 will go below on mobile view thanks to flexbox's align-self-->
     <header>
-        <div id="logo"></div>
-        <nav class="navbar"></nav>
+        <div id="logo">
+            <img src="/images/logo/Reservia.svg" alt="the Resevia logo which is the brand name written in the Raleway font">
+        </div>
+        <nav class="navbar">
+            <ul>                    <li class="brightblue"><a href="#heb">Hébérgements</a></li>
+                    <li class="darkgrey"><a href="#act">Activités</a></li>
+                <li class="brightblue nav">S'inscrire</li>
+            </ul>
+        </nav>
     </header>
 
     <!-- ACTUAL BODY -->
@@ -39,14 +46,14 @@
             </aside>
 
             <!-- Part 2: Accomodations -->
-            <section class="accomodations">
+            <section class="accomodations" id="heb">
                 <div class="title"></div>
                 <div class="6equalcards"></div>
             </section>
         </section>
 
         <!-- Separation 3: Activities -->
-        <section class="activities">
+        <section class="activities" id="act">
             <div class="title"></div>
             <div class="4colonnes">
                 <div class="col1"></div>

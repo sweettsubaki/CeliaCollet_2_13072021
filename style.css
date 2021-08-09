@@ -1,3 +1,55 @@
-* {
+body {
    font-family: 'Raleway', sans-serif;
+   display: flex;
+   flex-direction: column;
 }
+
+/*Colors given*/
+.brightblue {
+   color: #0065fc;
+}
+.lightestblue {
+   color: rgb(222, 235, 255)
+}
+.lightestgrey {
+   color: #F2F2F2;
+}
+
+/* Color picker*/
+.darkgrey {
+   color: #404040;
+}
+
+/*HEADER*/
+header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar {
+   width: 25%;
+}
+.navbar ul {
+   list-style-type: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+   .mobile {
+      display: flex;
+   }
+   .nav {
+      font-weight: bolder;
+   }
+
+/*CONTAINER*/
+
+   /*FILTER*/
+
+   /*RESULTS*/
+      /*POPULAR*/
+      /*ACCOMODATIONS*/
+
+   /*ACTIVITIES*/
+
+/*FOOTER*/
