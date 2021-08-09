@@ -1,7 +1,30 @@
+/*whole page*/
 body {
    font-family: 'Raleway', sans-serif;
    display: flex;
    flex-direction: column;
+}
+
+/*links*/
+a {
+   outline: none;
+   text-decoration: none;
+}
+
+
+a:link {
+   outline: none;
+   text-decoration: none;
+}
+
+a:visited {
+   color: inherit;
+   outline: none;
+   text-decoration: none;
+}
+
+a:hover {
+border-bottom: #003482 2px groove;
 }
 
 /*Colors given*/
@@ -12,7 +35,7 @@ body {
    color: rgb(222, 235, 255)
 }
 .lightestgrey {
-   color: #F2F2F2;
+   background-color: #F2F2F2;
 }
 
 /* Color picker*/
@@ -20,33 +43,91 @@ body {
    color: #404040;
 }
 
+/*Titles*/
+h1 {
+   font-weight: bold;
+   font-size: large;
+}
+h2 {
+   font-size: small;
+   font-weight: unset;
+}
+
 /*HEADER*/
 header {
    display: flex;
    justify-content: space-between;
+   height: 10vh;
 }
-
 .navbar {
-   width: 25%;
+   width: 30%;
 }
-.navbar ul {
-   list-style-type: none;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-   .mobile {
+   .navbar ul {
+      list-style-type: none;
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition-duration: 0.1s;
+      border-top: 3px transparent solid;
+      border-bottom: 3px transparent solid;
+      margin-top: -0.7rem;
+
    }
-   .nav {
-      font-weight: bolder;
-   }
+      .mobile {
+         display: flex;
+         width: 90%;
+      }
+         .heb {
+            border-top: #0065fc 4px solid;
+            padding: 2rem;
+            transition-duration: 0.1s;
+            border-bottom: 3px transparent solid;
+         }
+         .act {
+            padding: 2rem;
+            transition-duration: 0.1s;
+            border-top: 3px transparent solid;
+            border-bottom: 3px transparent solid;
+         }
+      .nav {
+         font-weight: bolder;
+      }
 
 /*CONTAINER*/
 
    /*FILTER*/
+   .searchbar {
+      height: 8vh;
+      display: flex;
+      align-items: center;
+   }
+   .icons {
+      padding: 1%;
+      height: 75%;
+   }
+   #searchbutton {
+      /*Button outside style*/
+      border: #F2F2F2 1px solid;
+      border-radius: 0px 15px 15px 0px;
+      /*Button inside style*/
+      background-color: #0065fc;
+      height: 100%;
+      padding: 1%;
+      /*font style*/
+      color: #ffffff;
+      font-weight: bold;
+   }
+   .SearchForm {
+      padding: 0 1.5%;
+      height: 100%;
+   }
+
 
    /*RESULTS*/
+   .results {
+      display: flex;
+      flex-direction: row-reverse;
+   }
       /*POPULAR*/
       /*ACCOMODATIONS*/
 

@@ -5,8 +5,8 @@
     <title></title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script></head>
 
 <body>
     <!-- HEADER
@@ -16,8 +16,11 @@
             <img src="/images/logo/Reservia.svg" alt="the Resevia logo which is the brand name written in the Raleway font">
         </div>
         <nav class="navbar">
-            <ul>                    <li class="brightblue"><a href="#heb">Hébérgements</a></li>
-                    <li class="darkgrey"><a href="#act">Activités</a></li>
+            <ul>
+                <div class="mobile">
+                    <li class="brightblue heb"><a href="#heb">Hébérgements</a></li>
+                    <li class="darkgrey act"><a href="#act">Activités</a></li>
+                </div>
                 <li class="brightblue nav">S'inscrire</li>
             </ul>
         </nav>
@@ -29,11 +32,18 @@
         <!-- Separation 1: Filter -->
         <section class="filter">
             <div class="actualfilters">
-                <div class="filterheader"></div>
-                <div class="searchbar"></div>
+                <div class="filterheader">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class="darkgrey">En plein centre ville ou en pleine nature</h2>
+                </div>
+                <div class="searchbar">
+                    <i class="fas fa-map-marker-alt lightestgrey icons"></i>                    
+                    <input class="SearchForm" type="search" placeholder="Marseille, France">
+                    <button id="searchbutton">Recherchez</button>
+                </div>
                 <div class="categoryfilters"></div>
             </div>
-            <div class="nbacomodations"></div>
+            <div class="nbacomodations darkgrey"></div>
         </section>
 
         <!-- Separation 2: Results -->
