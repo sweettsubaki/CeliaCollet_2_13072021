@@ -3,6 +3,7 @@ body {
    font-family: 'Raleway', sans-serif;
    display: flex;
    flex-direction: column;
+   line-height: 1.5;
 }
 
 /*links*/
@@ -98,38 +99,109 @@ header {
    /*FILTER*/
    .searchbar {
       height: 8vh;
-      display: flex;
+      display: inline-flex;
+      width: 100%;
+      overflow: auto;
       align-items: center;
    }
-   .icons {
-      padding: 1%;
-      height: 75%;
-   }
-   #searchbutton {
-      /*Button outside style*/
-      border: #F2F2F2 1px solid;
-      border-radius: 0px 15px 15px 0px;
-      /*Button inside style*/
-      background-color: #0065fc;
-      height: 100%;
-      padding: 1%;
-      /*font style*/
-      color: #ffffff;
-      font-weight: bold;
-   }
-   .SearchForm {
-      padding: 0 1.5%;
-      height: 100%;
-   }
+      /*Search Bar*/
+      .icons {
+         height: 75%;
+         border-radius: 10% 0% 0% 10% / 20% 0% 0% 20%;
+         padding: 1rem;
+      }
+      #searchbutton {
+         /*Button outside style*/
+         border: #F2F2F2 1px solid;
+         border-radius: 0% 10% 10% 0% / 0% 20% 20% 0%;
 
+         /*Button inside style*/
+         background-color: #0065fc;
+         height: 100%;
+         padding: 1%;
+         /*font style*/
+         color: #ffffff;
+         font-weight: bold;
+      }
+      .SearchForm {
+         margin-left: 1%;
+         padding: 0 1.5%;
+         height: 100%;
+      }
 
+      /*Category Filters*/
+      .categoryfilters {
+         display: flex;
+         align-items: center;
+      }
+         #filter {
+            margin: 2%;
+            font-weight: bold;
+            padding-right: 5%;
+
+         }
+         .categoryfilters ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+         }
+         .categorieslist {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            border: 2px solid #d9d9d9;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;            
+            justify-content: space-between;
+            flex-shrink: 0;
+            }
+            .FilterIcons {
+               color: #0065fc;
+               background-color: #DEEBFF;
+               border-radius: 100%;
+               height: 3rem;
+               width: 3rem;
+               min-height: 3rem;
+               min-width: 3rem;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               border: 2px solid #DEEBFF;
+            }
+            .category {
+               padding: 1rem;
+            }
+      .nbacomodations {
+         display: inline-flex;
+         align-items: center;
+      }
+         
    /*RESULTS*/
    .results {
       display: flex;
-      flex-direction: row-reverse;
    }
+   .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
+      box-sizing: content-box;
+   }
+
+      /*ACCOMODATIONS*/ /*
+      .accomodations {
+
+      }
+      .sixequalcards {
+
+      }
+*/
+         .accpic {
+            width: 20%;
+         }         
       /*POPULAR*/
-      /*ACCOMODATIONS*/
+
 
    /*ACTIVITIES*/
 

@@ -36,30 +36,66 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <h2 class="darkgrey">En plein centre ville ou en pleine nature</h2>
                 </div>
-                <div class="searchbar">
+                <form class="searchbar" method="POST" action="traitement.php">
                     <i class="fas fa-map-marker-alt lightestgrey icons"></i>                    
                     <input class="SearchForm" type="search" placeholder="Marseille, France">
                     <button id="searchbutton">Recherchez</button>
+                </form>
+                <div class="categoryfilters">
+                    <h3 id="filter">Filtres:</h3>
+                    <ul>
+                        <div class="categorieslist">                        
+                            <i class="fas fa-money-bill-wave FilterIcons"></i>
+                            <li class="category">Economique</li>
+                        </div>
+                        <div class="categorieslist">
+                            <i class="fas fa-child FilterIcons"></i>
+                            <li class="category">Familial</li>
+                        </div>
+                        <div class="categorieslist">
+                            <i class="fas fa-heart FilterIcons"></i>
+                            <li class="category">Romantique</li>
+                        </div>
+                        <div class="categorieslist">
+                            <i class="fas fa-dog FilterIcons"></i>                     
+                            <li class="category">Animaux autorisés</li>
+                        </div>
+                    </ul>
                 </div>
-                <div class="categoryfilters"></div>
             </div>
-            <div class="nbacomodations darkgrey"></div>
+            <div class="nbacomodations darkgrey">
+                <i class="fas fa-info-circle icons"></i>
+                <p>Plus de 500 logements sont disponibles dans cette vide.</p>
+            </div>
         </section>
 
         <!-- Separation 2: Results -->
         <section class="results">
-            <!-- Part 1: Popular Ads -->
-            <aside class="popular">
-                <div class="title"></div>
-                <div class="3cards"></div>
-                <div class="more"></div>
-            </aside>
-
-            <!-- Part 2: Accomodations -->
+            <!-- Part 1: Accomodations -->
             <section class="accomodations" id="heb">
-                <div class="title"></div>
-                <div class="6equalcards"></div>
+                <h1 class="title">Hébérgements à Marseilles</h1>
+                <div class="sixequalcards">
+                    <div class="Card">
+                        <img class="accpic" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                    </div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                </div>
+                <div class="more"></div>
             </section>
+            
+            <!-- Part 2: Popular Ads -->
+            <aside class="popular">
+                <h1 class="title">Les Plus Populaires</h1>
+                <div class="3cards">
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                    <div class="Card"></div>
+                </div>
+            </aside>
         </section>
 
         <!-- Separation 3: Activities -->
