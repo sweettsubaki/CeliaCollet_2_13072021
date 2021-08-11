@@ -2,31 +2,108 @@
 body {
    font-family: 'Raleway', sans-serif;
    display: flex;
-   flex-direction: column;
-   line-height: 1.5;
+   flex-direction: column;/*
+   background-color: black;*/
 }
 
 /*links*/
-a {
+/*header*/
+a.navlink {
    outline: none;
    text-decoration: none;
 }
-
-
-a:link {
+a.navlink:link {
    outline: none;
    text-decoration: none;
 }
-
-a:visited {
-   color: inherit;
+a#nav1:visited {
+   color: #0065fc;
    outline: none;
    text-decoration: none;
 }
-
-a:hover {
+a#nav2:visited {
+   color: #404040;
+   outline: none;
+   text-decoration: none;
+}
+a.navlink:hover {
 border-bottom: #003482 2px groove;
 }
+/*Categories*/
+a.catelink {
+   display: inline-flex;
+   outline: none;
+   text-decoration: none;
+   box-sizing: content-box;
+}
+a.catelink:link {
+   display: inline-flex;
+   outline: none;
+   text-decoration: none;
+}
+a.catelink:visited {
+   display: inline-flex;
+   outline: none;
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+}
+.catelink a:hover
+
+/*Results cards*/
+a.cardlink {
+   outline: none;
+   text-decoration: none;
+}
+a.cardlink:link {
+   outline: none;
+   text-decoration: none;
+}
+a.cardlink:visited {
+   outline: none;
+   text-decoration: none;
+}
+a.cardlink:hover {
+   box-shadow: #003482 4px;
+}
+   /*popular card links*/
+   a.popli {
+      display: flex;
+      align-items: center;
+      height: 15rem;
+      overflow: hidden;
+   }
+   a.popli:link {
+      align-items: center;
+      display: flex;
+      height:15rem;
+      overflow: hidden;
+   }
+   a.popli:visited {
+      align-items: center;
+      display: flex;
+      height: 15rem;
+      overflow: hidden;
+      color: #000;
+   }
+   a.popli:hover
+
+/*Activities cards*/
+a.actlink {
+   outline: none;
+   text-decoration: none;
+}
+a.actlink:link {
+   outline: none;
+   text-decoration: none;
+}
+a.actlink:visited {
+   outline: none;
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+}
+.actlink a:hover
 
 /*Colors given*/
 .brightblue {
@@ -37,6 +114,9 @@ border-bottom: #003482 2px groove;
 }
 .lightestgrey {
    background-color: #F2F2F2;
+}
+.lightgrey {
+   color: #d9d9d9;
 }
 
 /* Color picker*/
@@ -98,8 +178,8 @@ header {
 
    /*FILTER*/
    .searchbar {
-      height: 8vh;
-      display: inline-flex;
+      height: 4vh;
+      display: flex;
       width: 100%;
       overflow: auto;
       align-items: center;
@@ -118,7 +198,8 @@ header {
          /*Button inside style*/
          background-color: #0065fc;
          height: 100%;
-         padding: 1%;
+         padding: 1rem;
+
          /*font style*/
          color: #ffffff;
          font-weight: bold;
@@ -147,15 +228,12 @@ header {
             justify-content: space-evenly;
          }
          .categorieslist {
-            display: flex;
-            align-items: center;
+            width: 15rem;
             margin-right: 2rem;
             border: 2px solid #d9d9d9;
             border-radius: 2rem;
             margin-bottom: 1rem;
-            font-weight: bold;            
-            justify-content: space-between;
-            flex-shrink: 0;
+            font-weight: bold;
             }
             .FilterIcons {
                color: #0065fc;
@@ -181,28 +259,127 @@ header {
    /*RESULTS*/
    .results {
       display: flex;
+      justify-content: space-around;
+      height: 80vmin;
+      overflow: hidden;
    }
-   .card {
+
+   .rank ul {
+      list-style-type: none;
       display: flex;
-      flex-direction: column;
-      border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
-      box-sizing: content-box;
    }
 
-      /*ACCOMODATIONS*/ /*
+      /*ACCOMODATIONS*/
       .accomodations {
-
+         width: 60%;
+         border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+         padding: 2rem;
       }
       .sixequalcards {
-
+         display: flex;
+         flex-wrap: wrap;
+         flex-grow: 1;
+         justify-content: space-evenly;
       }
-*/
-         .accpic {
-            width: 20%;
-         }         
-      /*POPULAR*/
+      .Card {
+         display: flex;
+         flex-direction: column;
+         border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
+         box-sizing: content-box;
+         background-color: #ffffff;
+         flex: 0 1 30%;
+         height: 30vh;
+         overflow: hidden;
+      }
+         .accpic, .accpic2 {
+            width: 80%;
+            object-fit: cover;
+            border-radius: 10% 10% 0% 0% / 20% 20% 0% 0%;
+
+         }
+         .accpic { 
+            height: 50%;
+         }
+         .accpic2 {
+            height: 30%;
+         }
+         .bold {
+            font-weight: bold;
+         }
+      /*POPULAR*/      
+      .popular {
+         width: 30%;
+         display: flex;
+         flex-direction: column;
+      }
+
+      .threecards {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-content: space-between;
+         width: 80%;
+      }
+
+         .AsideCard {
+         border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
+         background-color: #ffffff;
+         height: 15rem;
+         width: 35rem;
+         margin: 1.5rem;
+         }
+            .textcard {
+               margin: 1.5rem;
+               width: 60%;
+            }
+            .poppic {
+               width: 60%;
+               height: 15rem;
+               object-fit: cover;
+               border-radius: 10% 0% 0% 10% / 20% 0% 0% 20%;
+            }
+            .lpic {
+               height: 15rem;
+            }
 
 
    /*ACTIVITIES*/
+   .fourcolumns {
+      display: flex;
+      height: 70vmin;
+      width: 100%;
+   }
+   .placename {
+      font-weight: bold;
+      color: #000;
+   }
+   .col {
+      height: 65vmin;
+      width: 27%;
+      overflow: hidden;
+   }
+
+      /*.double {
+      }*/
+
+      .col1 {
+      }
+         .actpic {
+            object-fit: cover;
+            height: 50vmin;
+            width: 100%;
+         }
+
+      .col2 {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+      }
+         .doubleactpic {
+            object-fit: cover;
+            height: 17vh;
+            width: 100%;
+            border-radius: 1rem 1rem 0rem 0rem;
+         }
 
 /*FOOTER*/
