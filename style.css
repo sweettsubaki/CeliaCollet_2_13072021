@@ -62,6 +62,7 @@ a.cardlink:link {
 a.cardlink:visited {
    outline: none;
    text-decoration: none;
+   color: #0a50b9;
 }
 a.cardlink:hover {
    box-shadow: #003482 4px;
@@ -84,7 +85,7 @@ a.cardlink:hover {
       display: flex;
       height: 15rem;
       overflow: hidden;
-      color: #000;
+      color: #0065fc;
    }
    a.popli:hover
 
@@ -186,19 +187,18 @@ header {
    }
       /*Search Bar*/
       .icons {
-         height: 75%;
-         border-radius: 10% 0% 0% 10% / 20% 0% 0% 20%;
-         padding: 1rem;
+         height: 100%;
+         border-radius: 0.5rem 0rem 0rem 0.5rem;
+         padding-left: 0.5rem;
       }
       #searchbutton {
          /*Button outside style*/
          border: #F2F2F2 1px solid;
-         border-radius: 0% 10% 10% 0% / 0% 20% 20% 0%;
+         border-radius: 0rem 0.5rem 0.5rem 0rem;
 
          /*Button inside style*/
          background-color: #0065fc;
          height: 100%;
-         padding: 1rem;
 
          /*font style*/
          color: #ffffff;
@@ -208,6 +208,7 @@ header {
          margin-left: 1%;
          padding: 0 1.5%;
          height: 100%;
+         border: #F2F2F2 0.5px solid;
       }
 
       /*Category Filters*/
@@ -259,9 +260,10 @@ header {
    /*RESULTS*/
    .results {
       display: flex;
-      justify-content: space-around;
-      height: 80vmin;
+      justify-content: space-between;
+      height: 100vmin;
       overflow: hidden;
+      margin: 5rem;
    }
 
    .rank ul {
@@ -271,8 +273,11 @@ header {
 
       /*ACCOMODATIONS*/
       .accomodations {
-         width: 60%;
-         border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         width: 70%;
+         border-radius: 2rem 2rem 2rem 2rem;
          padding: 2rem;
       }
       .sixequalcards {
@@ -284,60 +289,93 @@ header {
       .Card {
          display: flex;
          flex-direction: column;
-         border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
-         box-sizing: content-box;
+         border-radius: 2rem 2rem 2rem 2rem;
          background-color: #ffffff;
          flex: 0 1 30%;
-         height: 30vh;
+         height: 40vh;
+         width: 20%;
          overflow: hidden;
-      }
+         margin: 1rem;
+      } 
          .accpic, .accpic2 {
-            width: 80%;
+            width: 100%;
             object-fit: cover;
-            border-radius: 10% 10% 0% 0% / 20% 20% 0% 0%;
+            border-radius: 2rem 2rem 0rem 0rem;
+            height: 20vh;
+         }
 
+         .AccTextCard {
+            height: 5vh;
+            margin: 1rem;
          }
-         .accpic { 
-            height: 50%;
-         }
-         .accpic2 {
-            height: 30%;
+
+         .more {
+            padding: 0.5rem;
          }
          .bold {
             font-weight: bold;
          }
       /*POPULAR*/      
       .popular {
-         width: 30%;
+         width: 25%;
          display: flex;
          flex-direction: column;
+         border-radius: 2rem 2rem 2rem 2rem;
+
+      }
+      .popularheader{
+         display: flex;
+         color: #000;
+         justify-content: space-between;
+         align-items: center;
+         padding-right: 3rem;
+      }
+      .graph {
+         height: 3vh;
       }
 
       .threecards {
          display: flex;
          flex-direction: column;
          justify-content: space-between;
-         align-content: space-between;
+         align-content: center;
          width: 80%;
+         height: 18vh;
       }
 
          .AsideCard {
-         border-radius: 10% 10% 10% 10% / 20% 20% 20% 20%;
+         display: flex;
+         border-radius: 2rem 2rem 2rem 2rem;
          background-color: #ffffff;
-         height: 15rem;
-         width: 35rem;
-         margin: 1.5rem;
+         height: 24vh;
+         width: 25rem;
+         margin: 1.1rem;
+         margin-top: 2rem;
+         margin-bottom: 2rem;
          }
+         .popcard {
+            display: flex;
+            flex-direction: column;
+         }
+
             .textcard {
-               margin: 1.5rem;
-               width: 60%;
+               width: 50%;
+               padding-left: 0.7rem;
             }
+
+            .texteuh {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+            }
+
             .poppic {
-               width: 60%;
-               height: 15rem;
+               width: 40%;
+               height: 22vh;
                object-fit: cover;
-               border-radius: 10% 0% 0% 10% / 20% 0% 0% 20%;
+               border-radius: 2rem 0rem 0rem 2rem;
             }
+
             .lpic {
                height: 15rem;
             }
