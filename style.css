@@ -388,7 +388,7 @@ header {
       width: 100%;
    }
    .col {
-      height: 79vmin;
+      height: 80vmin;
       width: 25%;
       overflow: hidden;
    }
@@ -409,9 +409,11 @@ header {
       }
       .row 
       .row1 {
-height: 40%;      }
+         height: 40%;      
+      }
       .row2 {
-height: 40%;      }
+         height: 40%;      
+      }
 
       .ActivityCards {
          box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.37);
@@ -437,3 +439,17 @@ height: 40%;      }
             color: #000;
          }
 /*FOOTER*/
+footer {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 2rem 0rem;
+}
+
+.footernav {
+   display: flex;
+   flex-direction: column;
+}
+   .footerlist {
+   list-style-type: none;
+   padding: 0px;
+   }
