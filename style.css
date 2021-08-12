@@ -384,27 +384,21 @@ header {
    /*ACTIVITIES*/
    .fourcolumns {
       display: flex;
-      height: 70vmin;
+      height: 80vmin;
       width: 100%;
    }
-   .placename {
-      font-weight: bold;
-      color: #000;
-   }
    .col {
-      height: 65vmin;
-      width: 27%;
+      height: 79vmin;
+      width: 25%;
       overflow: hidden;
    }
 
-      /*.double {
-      }*/
-
       .col1 {
+         height: 100%;
       }
          .actpic {
             object-fit: cover;
-            height: 50vmin;
+            height: 60vmin;
             width: 100%;
          }
 
@@ -413,11 +407,33 @@ header {
          flex-direction: column;
          justify-content: space-around;
       }
+      .row 
+      .row1 {
+height: 40%;      }
+      .row2 {
+height: 40%;      }
+
+      .ActivityCards {
+         box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.37);
+         width: 100%;
+         border-radius: 1rem 1rem 1rem 1rem;
+         border: #F2F2F2;
+
+      }
+
          .doubleactpic {
             object-fit: cover;
-            height: 17vh;
+            height: 25vh;
             width: 100%;
+         }
+         .actpic, .doubleactpic {
             border-radius: 1rem 1rem 0rem 0rem;
          }
 
+         .placename {
+            padding-left: 5rem;
+            padding-bottom: 2rem;
+            font-weight: bold;
+            color: #000;
+         }
 /*FOOTER*/
