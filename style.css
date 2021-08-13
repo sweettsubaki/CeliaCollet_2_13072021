@@ -51,45 +51,53 @@ a.catelink:visited {
 .catelink a:hover
 
 /*Results cards*/
-a.cardlink {
-   outline: none;
-   text-decoration: none;
-}
-a.cardlink:link {
-   outline: none;
-   text-decoration: none;
-}
-a.cardlink:visited {
-   outline: none;
-   text-decoration: none;
-   color: #0a50b9;
-}
-a.cardlink:hover {
-   box-shadow: #003482 4px;
-}
-   /*popular card links*/
+   /*Accomodation cards*/
+   a.cardlink {
+      outline: none;
+      text-decoration: none;
+   }
+   a.cardlink:link {
+      outline: none;
+      text-decoration: none;
+   }
+   a.cardlink:visited {
+      outline: none;
+      text-decoration: none;
+      color: #0a50b9;
+   }
+   a.cardlink:hover {
+      box-shadow: #003482 4px;
+   }
+   /*Display More*/
+
+
+   /*popular cards*/
    a.popli {
       display: flex;
       align-items: center;
-      height: 15rem;
+      height: 20vh;
       overflow: hidden;
+      border-radius: 2rem 2rem 2rem 2rem;
    }
    a.popli:link {
       align-items: center;
       display: flex;
-      height:15rem;
+      height: 20vh;
       overflow: hidden;
+      border-radius: 2rem 2rem 2rem 2rem;
    }
    a.popli:visited {
       align-items: center;
       display: flex;
-      height: 15rem;
+      height: 20vh;
       overflow: hidden;
       color: #0065fc;
+      border-radius: 2rem 2rem 2rem 2rem;
+
    }
    a.popli:hover
 
-/*Activities cards*/
+/*Activity cards*/
 a.actlink {
    outline: none;
    text-decoration: none;
@@ -106,6 +114,9 @@ a.actlink:visited {
 }
 .actlink a:hover
 
+/*END LINKS*/
+
+/*COLORS*/
 /*Colors given*/
 .brightblue {
    color: #0065fc;
@@ -124,6 +135,7 @@ a.actlink:visited {
 .darkgrey {
    color: #404040;
 }
+/*END COLORS*/
 
 /*Titles*/
 h1 {
@@ -134,6 +146,18 @@ h2 {
    font-size: small;
    font-weight: unset;
 }
+.bold {
+   font-weight: bold;
+}
+.title1 {
+   margin-top: 5rem;
+}
+.title2 {
+   margin-top: 1rem;
+   margin-left: 1rem;
+}
+/*END TITLES*/
+
 
 /*HEADER*/
 header {
@@ -174,6 +198,8 @@ header {
       .nav {
          font-weight: bolder;
       }
+/*END HEADER*/
+
 
 /*CONTAINER*/
 
@@ -222,6 +248,7 @@ header {
             padding-right: 5%;
 
          }
+         /*Actual Filter*/
          .categoryfilters ul {
             list-style-type: none;
             display: flex;
@@ -252,10 +279,12 @@ header {
             .category {
                padding: 1rem;
             }
+      /*Number of accomodations exiting*/
       .nbacomodations {
          display: inline-flex;
          align-items: center;
       }
+   /*END FILTER*/
          
    /*RESULTS*/
    .results {
@@ -280,176 +309,208 @@ header {
          border-radius: 2rem 2rem 2rem 2rem;
          padding: 2rem;
       }
+      /*cards block*/
       .sixequalcards {
          display: flex;
          flex-wrap: wrap;
          flex-grow: 1;
          justify-content: space-evenly;
       }
-      .Card {
-         display: flex;
-         flex-direction: column;
-         border-radius: 2rem 2rem 2rem 2rem;
-         background-color: #ffffff;
-         flex: 0 1 30%;
-         height: 40vh;
-         width: 20%;
-         overflow: hidden;
-         margin: 1rem;
-      } 
-         .accpic, .accpic2 {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 2rem 2rem 0rem 0rem;
-            height: 20vh;
-         }
-
-         .AccTextCard {
-            height: 5vh;
+         /*Each Card*/
+         .Card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 2rem 2rem 2rem 2rem;
+            background-color: #ffffff;
+            flex: 0 1 30%;
+            height: 40vh;
+            width: 20%;
+            overflow: hidden;
             margin: 1rem;
-         }
+            } 
+            /*Pictures*/
+            .accpic, .accpic2 {
+               width: 100%;
+               object-fit: cover;
+               border-radius: 2rem 2rem 0rem 0rem;
+               height: 20vh;
+            }
+            /*Text*/
+            .AccTextCard {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               height: 6vh;
+               margin: 0.5rem;
+            }
+            .text {
+            }
+   /*Display More*/
+   .more {
+      padding: 0.5rem;
+   }
+   /*END RESULTS*/
 
-         .more {
-            padding: 0.5rem;
-         }
-         .bold {
-            font-weight: bold;
-         }
-      /*POPULAR*/      
-      .popular {
-         width: 25%;
-         display: flex;
-         flex-direction: column;
-         border-radius: 2rem 2rem 2rem 2rem;
-
-      }
+   /*POPULAR*/      
+   .popular {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 2rem 2rem 2rem 2rem;
+   }
+      /*Header*/
       .popularheader{
          display: flex;
          color: #000;
          justify-content: space-between;
          align-items: center;
          padding-right: 3rem;
+         margin-top: 1rem;
       }
       .graph {
          height: 3vh;
       }
 
+      /*Cards Block*/
       .threecards {
          display: flex;
          flex-direction: column;
          justify-content: space-between;
          align-content: center;
          width: 80%;
-         height: 18vh;
+         height: 80vh;
       }
-
-         .AsideCard {
+      /*Each Card*/
+      .AsideCard {
          display: flex;
-         border-radius: 2rem 2rem 2rem 2rem;
+         justify-content: center;
          background-color: #ffffff;
-         height: 24vh;
+         height: 50vh;
          width: 25rem;
          margin: 1.1rem;
          margin-top: 2rem;
          margin-bottom: 2rem;
-         }
+         border-radius: 2rem 2rem 2rem 2rem;
+         ;
+      }
          .popcard {
             display: flex;
             flex-direction: column;
          }
 
-            .textcard {
-               width: 50%;
-               padding-left: 0.7rem;
-            }
+         /*Pictures*/
+         .poppic {
+            width: 35%;
+            height: 50vh;
+            object-fit: cover;
+            border-radius: 3rem 0rem 0rem 3rem;
+         }
 
-            .texteuh {
-               display: flex;
-               flex-direction: column;
-               justify-content: space-between;
-            }
+         .lpic {
+            height: 15rem;
+         }
 
-            .poppic {
-               width: 40%;
-               height: 22vh;
-               object-fit: cover;
-               border-radius: 2rem 0rem 0rem 2rem;
-            }
-
-            .lpic {
-               height: 15rem;
-            }
-
+         /*Text*/
+         .textcard {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 100%;
+            padding-left: 0.7rem;
+         }
+/*
+         .texteuh {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+         }*/
+   /*END POPULAR*/
 
    /*ACTIVITIES*/
+   /*Cards Block*/
    .fourcolumns {
       display: flex;
-      height: 80vmin;
+      height: 90vmin;
       width: 100%;
+      margin: 10rem;
    }
-   .col {
-      height: 80vmin;
-      width: 25%;
-      overflow: hidden;
-   }
+      /*Each Column*/
+      .col {
+         height: 100vh;
+         width: 25%;
+         overflow: hidden;
+      }
 
+      /*1 Picture column*/
       .col1 {
          height: 100%;
       }
+         .col1card {
+            height: 70%;
+         }
          .actpic {
             object-fit: cover;
             height: 60vmin;
             width: 100%;
          }
 
+      /*2 Pictures Column*/
       .col2 {
+         height: 100vh;
          display: flex;
          flex-direction: column;
-         justify-content: space-around;
+         justify-content: space-between;
       }
-      .row 
-      .row1 {
-         height: 40%;      
-      }
-      .row2 {
-         height: 40%;      
-      }
+         /*Rows*/
+         .row 
+         .row1 {
+            height: 60%;      
+         }
+         .row2 {
+            height: 40%;      
+         }
 
-      .ActivityCards {
-         box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.37);
-         width: 100%;
-         border-radius: 1rem 1rem 1rem 1rem;
-         border: #F2F2F2;
-
-      }
-
-         .doubleactpic {
-            object-fit: cover;
-            height: 25vh;
+         /*Each Cards*/
+         .ActivityCards {
+            box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.37);
             width: 100%;
+            height: 100%;
+            border-radius: 1rem 1rem 1rem 1rem;
+            border: #F2F2F2;/*
+            border: black 2px solid;
+            background-color: #ffffff;*/
          }
-         .actpic, .doubleactpic {
-            border-radius: 1rem 1rem 0rem 0rem;
-         }
+            /*Pictures*/
+            .doubleactpic {
+               object-fit: cover;
+               height: 25vh;
+               width: 100%;
+            }
+            .actpic, .doubleactpic {
+               border-radius: 1rem 1rem 0rem 0rem;
+            }
+            /*Text*/
+            .placename {
+               padding-left: 5rem;
+               padding-bottom: 2rem;
+               font-weight: bold;
+               color: #000;
+            }
+   /*END ACTIVITIES*/
 
-         .placename {
-            padding-left: 5rem;
-            padding-bottom: 2rem;
-            font-weight: bold;
-            color: #000;
-         }
 /*FOOTER*/
 footer {
    display: flex;
    justify-content: space-evenly;
    padding: 2rem 0rem;
 }
-
-.footernav {
-   display: flex;
-   flex-direction: column;
-}
-   .footerlist {
-   list-style-type: none;
-   padding: 0px;
+   .footernav {
+      display: flex;
+      flex-direction: column;
    }
+      .footerlist {
+      list-style-type: none;
+      padding: 0px;
+      }
+/*END FOOTER*/
