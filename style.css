@@ -1,9 +1,8 @@
 /*whole page*/
 body {
-   font-family: 'Raleway', sans-serif;
-   display: flex;
-   flex-direction: column;/*
+   font-family: 'Raleway', sans-serif;/*
    background-color: black;*/
+   max-width: 1500px;
 }
 
 /*links*/
@@ -11,20 +10,24 @@ body {
 a.navlink {
    outline: none;
    text-decoration: none;
+   font-weight: bold;
 }
 a.navlink:link {
    outline: none;
    text-decoration: none;
+   font-weight: bold;
 }
 a#nav1:visited {
    color: #0065fc;
    outline: none;
    text-decoration: none;
+   font-weight: bold;
 }
 a#nav2:visited {
    color: #404040;
    outline: none;
    text-decoration: none;
+   font-weight: bold;
 }
 a.navlink:hover {
 border-bottom: #003482 2px groove;
@@ -69,7 +72,22 @@ a.catelink:visited {
       box-shadow: #003482 4px;
    }
    /*Display More*/
-
+   a.more {
+      outline: none;
+      text-decoration: none;
+   }
+   a.more:link {
+      outline: none;
+      text-decoration: none;
+   }
+   a#more:visited {
+      color: #0065fc;
+      outline: none;
+      text-decoration: none;
+   }
+   a.more:hover {
+   border-bottom: #003482 2px groove;
+   }
 
    /*popular cards*/
    a.popli {
@@ -150,7 +168,8 @@ h2 {
    font-weight: bold;
 }
 .title1 {
-   margin-top: 5rem;
+   margin-top: 2rem;
+   margin-left: 1rem;
 }
 .title2 {
    margin-top: 1rem;
@@ -164,6 +183,7 @@ header {
    display: flex;
    justify-content: space-between;
    height: 10vh;
+   max-width: 100%;
 }
 .navbar {
    width: 30%;
@@ -196,13 +216,17 @@ header {
             border-bottom: 3px transparent solid;
          }
       .nav {
-         font-weight: bolder;
+         font-weight: bold;
+         color: #0065fc;
+         padding-right: 50rem;
       }
 /*END HEADER*/
 
 
-/*CONTAINER*/
-
+/*CONTAINER*//*
+.container {
+   max-height: 2000vh;
+}*/
    /*FILTER*/
    .searchbar {
       height: 4vh;
@@ -288,9 +312,10 @@ header {
          
    /*RESULTS*/
    .results {
+      width: 100%;
       display: flex;
       justify-content: space-between;
-      height: 100vmin;
+      height: fit-content;
       overflow: hidden;
       margin: 5rem;
    }
@@ -307,7 +332,6 @@ header {
          justify-content: space-around;
          width: 70%;
          border-radius: 2rem 2rem 2rem 2rem;
-         padding: 2rem;
       }
       /*cards block*/
       .sixequalcards {
@@ -428,6 +452,10 @@ header {
    /*END POPULAR*/
 
    /*ACTIVITIES*/
+   .activities {
+      width: 100%;
+      height: fit-content; /*don't hesitate to modify again*/
+   }
    /*Cards Block*/
    .fourcolumns {
       display: flex;
@@ -436,8 +464,8 @@ header {
       margin: 10rem;
    }
       /*Each Column*/
-      .col {
-         height: 100vh;
+      .col {/*
+         height: 100vh;*/
          width: 25%;
          overflow: hidden;
       }
@@ -446,8 +474,8 @@ header {
       .col1 {
          height: 100%;
       }
-         .col1card {
-            height: 70%;
+         .col1card {/*
+            height: 70%;*/
          }
          .actpic {
             object-fit: cover;
@@ -465,10 +493,10 @@ header {
          /*Rows*/
          .row 
          .row1 {
-            height: 60%;      
-         }
+            flex: 1.5;
+         } /*to verify again*/
          .row2 {
-            height: 40%;      
+            flex: 1;
          }
 
          /*Each Cards*/
@@ -501,6 +529,7 @@ header {
 
 /*FOOTER*/
 footer {
+   width: 100%;
    display: flex;
    justify-content: space-evenly;
    padding: 2rem 0rem;
