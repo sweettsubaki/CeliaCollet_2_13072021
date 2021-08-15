@@ -157,10 +157,12 @@ a.actlink:visited {
 h1 {
    font-weight: bold;
    font-size: large;
+   margin: 00.4rem;
 }
 h2 {
    font-size: small;
    font-weight: unset;
+   margin: 0.4rem;
 }
 .bold {
    font-weight: bold;
@@ -324,6 +326,7 @@ header {
    .rank ul {
       list-style-type: none;
       display: flex;
+      margin: 0rem;   
    }
 
       /*ACCOMODATIONS*/
@@ -350,11 +353,11 @@ header {
             box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             background-color: #ffffff;
             flex: 0 1 30%;
-            height: 275px;
+            height: 270px;
             width: 20%;
             overflow: hidden;
             margin: 1rem;
-            padding: 0.6rem;
+            padding: 0.4rem;
             } 
             /*Pictures*/
             .accpic, .accpic2 {
@@ -367,7 +370,8 @@ header {
             .AccTextCard {
                display: flex;
                flex-direction: column;
-               justify-content: space-between;
+               justify-content: space-between; 
+               height: 90px;
             }
             .text
    /*Display More*/
@@ -393,7 +397,7 @@ header {
          margin-top: 1rem;
       }
       .graph {
-         height: 1.5vh;
+         height: 2rem;
       }
 
       /*Cards Block*/
@@ -414,8 +418,8 @@ header {
          background-color: #ffffff;
          height: 210px;
          width: 95%;
-         margin-top: 0.5rem;
-         margin-bottom: 0.5rem;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
          border-radius: 2rem 2rem 2rem 2rem;
          height: 180px;
          box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
