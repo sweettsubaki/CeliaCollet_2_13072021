@@ -3,6 +3,7 @@ body {
    font-family: 'Raleway', sans-serif;/*
    background-color: black;*/
    max-width: 1500px;
+   margin: auto;
 }
 
 /*links*/
@@ -93,21 +94,18 @@ a.catelink:visited {
    a.popli {
       display: flex;
       align-items: center;
-      height: 20vh;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
    }
    a.popli:link {
       align-items: center;
       display: flex;
-      height: 20vh;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
    }
    a.popli:visited {
       align-items: center;
       display: flex;
-      height: 20vh;
       overflow: hidden;
       color: #0065fc;
       border-radius: 2rem 2rem 2rem 2rem;
@@ -168,10 +166,13 @@ h2 {
    font-weight: bold;
 }
 .title1 {
+   font-size: x-large;
    margin-top: 2rem;
    margin-left: 1rem;
+   margin-bottom: 0.5rem;
 }
 .title2 {
+   font-size: x-large;
    margin-top: 1rem;
    margin-left: 1rem;
 }
@@ -327,48 +328,48 @@ header {
 
       /*ACCOMODATIONS*/
       .accomodations {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-         width: 70%;
+         width: 69%;
          border-radius: 2rem 2rem 2rem 2rem;
       }
       /*cards block*/
-      .sixequalcards {
-         display: flex;
-         flex-wrap: wrap;
-         flex-grow: 1;
-         justify-content: space-evenly;
-      }
+      .sixequalcards 
+
+         /*Each row*/
+         .AccRow1 {
+            display: flex;
+
+         }
+         .AccRow2 {
+            display: flex;
+         }
          /*Each Card*/
          .Card {
             display: flex;
             flex-direction: column;
             border-radius: 2rem 2rem 2rem 2rem;
+            box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             background-color: #ffffff;
             flex: 0 1 30%;
-            height: 40vh;
+            height: 275px;
             width: 20%;
             overflow: hidden;
             margin: 1rem;
+            padding: 0.6rem;
             } 
             /*Pictures*/
             .accpic, .accpic2 {
                width: 100%;
                object-fit: cover;
                border-radius: 2rem 2rem 0rem 0rem;
-               height: 20vh;
+               height: 150px;
             }
             /*Text*/
             .AccTextCard {
                display: flex;
                flex-direction: column;
                justify-content: space-between;
-               height: 6vh;
-               margin: 0.5rem;
             }
-            .text {
-            }
+            .text
    /*Display More*/
    .more {
       padding: 0.5rem;
@@ -377,7 +378,7 @@ header {
 
    /*POPULAR*/      
    .popular {
-      width: 25%;
+      width: 29%;
       display: flex;
       flex-direction: column;
       border-radius: 2rem 2rem 2rem 2rem;
@@ -392,7 +393,7 @@ header {
          margin-top: 1rem;
       }
       .graph {
-         height: 3vh;
+         height: 1.5vh;
       }
 
       /*Cards Block*/
@@ -402,36 +403,35 @@ header {
          justify-content: space-between;
          align-content: center;
          width: 80%;
-         height: 80vh;
+         height: fit-content;
+         margin-left: auto;
+         margin-right: auto;
       }
       /*Each Card*/
       .AsideCard {
          display: flex;
          justify-content: center;
          background-color: #ffffff;
-         height: 50vh;
-         width: 25rem;
-         margin: 1.1rem;
-         margin-top: 2rem;
-         margin-bottom: 2rem;
+         height: 210px;
+         width: 95%;
+         margin-top: 0.5rem;
+         margin-bottom: 0.5rem;
          border-radius: 2rem 2rem 2rem 2rem;
-         ;
+         height: 180px;
+         box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
       }
-         .popcard {
+         .popcard {/*
             display: flex;
-            flex-direction: column;
+            flex-direction: column;*/
+            padding: 0.3rem;
          }
 
          /*Pictures*/
          .poppic {
-            width: 35%;
-            height: 50vh;
+            width: 40%;
+            height: 185px;
             object-fit: cover;
-            border-radius: 3rem 0rem 0rem 3rem;
-         }
-
-         .lpic {
-            height: 15rem;
+            border-radius: 2rem 0rem 0rem 2rem;
          }
 
          /*Text*/
@@ -440,7 +440,7 @@ header {
             flex-direction: column;
             justify-content: space-between;
             width: 50%;
-            height: 100%;
+            height: fit-content;
             padding-left: 0.7rem;
          }
 /*
@@ -501,7 +501,7 @@ header {
 
          /*Each Cards*/
          .ActivityCards {
-            box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.37);
+            box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             width: 100%;
             height: 100%;
             border-radius: 1rem 1rem 1rem 1rem;
