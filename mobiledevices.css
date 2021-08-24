@@ -1,0 +1,115 @@
+body {
+    max-width: 100%;
+    margin: auto;
+}
+header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+.nav1 {
+    align-self: flex-end;
+}
+.nav2 {
+    align-self: flex-end;
+}
+
+/*CONTAINER*/
+/*FILTER*/
+.filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/*RESULTS*/
+.results {
+    display: flex;
+    flex-direction: column-reverse;
+    width: fit-content;
+    padding: 0rem;
+}
+    /*ACCOMMODATION*/
+    .accomodations {
+    width: 100%;
+    background: none;
+    }
+    /*Card Block*/
+    /*rows*/
+    .AccRow1 {
+        display: flex;
+        flex-direction: column;
+    } 
+    .AccRow2 {
+        display: flex;
+        flex-direction: column;
+    }
+        /*Each Card*/
+        .Card {
+            width: 100%;
+            height: 200px;
+        }
+        /*Pictures*/
+        .accpic, .accpic2 {
+            height: 115px;
+        }
+
+    /*POPULAR*/
+    .popular {
+        border-radius: 0rem;
+        width: 100%;
+    }
+        /*Card Block*/
+        .threecards
+            /*Each card*/
+            .AsideCard {
+                width: 100%;
+            }
+
+/*ACTIVITIES*/
+.activities {
+    width: 100%;
+}
+    /*Cards Block*/
+    .fourcolumns {
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .col, .col1, .col2 {
+        height: fit-content;
+    }
+    .row, .row1, .row2 {
+        display: block;
+    }
+    .row2 {
+        position: initial;
+    }
+
+    /*Each Card*/
+    .col1card, .ActivityCards, .smallactcard, .Card {
+        border-radius: 2rem 2rem 2rem 2rem;
+        box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
+        background-color: #ffffff;
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        margin: 1rem;
+        padding: 0.4rem;
+    }
+        /*Pictures*/
+        .actpic, .doubleactpic, .smallactpic {
+            max-width: 325px;
+            height: 115px;
+        }
+        .placenames {
+            height: 55px;
+        }
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

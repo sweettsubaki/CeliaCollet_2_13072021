@@ -2,7 +2,7 @@
 body {
    font-family: 'Raleway', sans-serif;/*
    background-color: black;*/
-   max-width: 1500px;
+   max-width: 1200px;
    margin: auto;
 }
 
@@ -77,16 +77,25 @@ a.catelink:visited {
    /*Display More*/
    a.more {
       outline: none;
+      font-weight: bold;
       text-decoration: none;
+      padding: 0.5rem;
+      margin-left: 0.5rem;
    }
    a.more:link {
       outline: none;
       text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+      margin-left: 0.5rem;
    }
-   a#more:visited {
+   a.more:visited {
       color: #000;
       outline: none;
       text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem;
+      margin-left: 0.5rem;
    }
    a.more:hover {
    border-bottom: #003482 2px groove;
@@ -340,13 +349,15 @@ header {
       justify-content: space-between;
       height: fit-content;
       overflow: hidden;
-      margin-top: 2rem;   
+      margin-top: 2rem;
+      margin-bottom: 4rem;
    }
 
    .rank ul {
       list-style-type: none;
       display: flex;
-      margin: 0rem;   
+      margin: 0rem;
+      margin-block-start: 0rem;
    }
 
       /*ACCOMODATIONS*/
@@ -373,36 +384,43 @@ header {
             box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             background-color: #ffffff;
             flex: 0 1 30%;
-            height: 270px;
-            width: 20%;
+            height: 200px;
+            width: 30%;
             overflow: hidden;
             margin: 1rem;
             padding: 0.4rem;
+            padding-bottom: 1rem;
             } 
             /*Pictures*/
             .accpic, .accpic2 {
                width: 100%;
                object-fit: cover;
                border-radius: 2rem 2rem 0rem 0rem;
-               height: 150px;
+               height: 115px;
             }
             /*Text*/
             .AccTextCard {
                display: flex;
                flex-direction: column;
                justify-content: space-between; 
-               height: 90px;
+               height: 83px;
+               width: 100%;
             }
-            .text
+            .hotel1 {
+               width: 95%;
+            }/*
+            .text {
+               width: 62%;
+            }*/
    /*Display More*/
    .more {
-      padding: 0.5rem;
+      padding-bottom: 1rem;
    }
-   /*END RESULTS*/
+   /*END ACCOMODATIONS*/
 
    /*POPULAR*/      
    .popular {
-      width: 29%;
+      width: 30%;
       display: flex;
       flex-direction: column;
       border-radius: 2rem 2rem 2rem 2rem;
@@ -436,24 +454,24 @@ header {
          display: flex;
          justify-content: center;
          background-color: #ffffff;
-         height: 210px;
-         width: 95%;
+         height: 145px;
+         width: 95.58%;
          margin-top: 1rem;
          margin-bottom: 1rem;
          border-radius: 2rem 2rem 2rem 2rem;
-         height: 180px;
          box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
       }
          .popcard {/*
             display: flex;
-            flex-direction: column;*/
+            flex-direction: column;
+            justify-content: space-between;*/
             padding: 0.3rem;
          }
 
          /*Pictures*/
          .poppic {
             width: 40%;
-            height: 185px;
+            height: 135px;
             object-fit: cover;
             border-radius: 2rem 0rem 0rem 2rem;
          }
@@ -462,70 +480,75 @@ header {
          .textcard {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            width: 50%;
+            width: 60%;
             height: fit-content;
             padding-left: 0.7rem;
          }
-/*
-         .texteuh {
+
+         .texteuh {/*
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-         }*/
+            justify-content: space-between;*/
+         }
+
+         .hotel {
+            font-size: medium;
+         }
+
+         .AsideStars {
+            padding-top: 2rem;
+            padd
+         }
    /*END POPULAR*/
 
    /*ACTIVITIES*/
    .activities {
-      margin-top: 3rem;
-      width: 100%;
-      height: 800px; /*don't hesitate to modify again*/
+      margin: auto;
+      width: 90%;
    }
    /*Cards Block*/
    .fourcolumns {
       display: flex;
-      height: 800px;
+      height: 455px;
       width: 100%;
    }
       /*Each Column*/
       .col {
          width: 25%;
-         height: 800px;
+         height: 455px;
          overflow: hidden;
+         position: relative;
       }
 
       /*1 Picture column*/
       .col1 {
-         height: 90%;
       }
-         .col1card {/*
-            height: 70%;*/
+         .col1card {
+            height: 450px;
          }
          .actpic {
             object-fit: cover;
-            height: 580px;
+            height: 390px;
             width: 100%;
          }
 
       /*2 Pictures Column*/
       .col2 {
-         height: 100%;
+         position: relative;
       }
          /*Rows*/
-         .row {/*
+         .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;/*
             padding: 0rem;*/
-            
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(2, 0.350fr);
-grid-column-gap: 0px;
-grid-row-gap: 15px;
          }
          .row1 {
-            flex: 0.2;
          } /*to verify again*/
          .row2 {
-            flex: 0.2;
+            position: absolute;
+            bottom: 1.1%;
          }
 
          /*Each Cards*/
@@ -539,11 +562,22 @@ grid-row-gap: 15px;
             border: black 2px solid;
             background-color: #ffffff;*/
          }
+         #firstactcard {
+            height: 240px;
+         }
+         #secactcard {
+            height: 170px;
+         }
+         #thirdactcard {
+            height: 200px;
+         }
+         #fourthactcard {
+            height: 215px;
+         }
             /*Pictures*/
             .doubleactpic {
                object-fit: cover;
                width: 100%;
-               height: 250px;
             }
             .actpic, .doubleactpic {
                border-radius: 1rem 1rem 0rem 0rem;
@@ -552,12 +586,31 @@ grid-row-gap: 15px;
              margin-block: 0rem;
              margin-inline: 0.5rem;  
             }
+            #firstactpic {
+               height: 180px;
+            }
+            #secactpic {
+               height: 115px;
+            }
+            #thirdactpic {
+               height: 140px;
+            }
+            #fourthactpic {
+               height: 160px;
+            }
+
+            
             /*Text*/
+            .capplace {
+               position: relative;
+               height: 60px;
+            }
             .placename {
-               margin: 1rem;
-               padding-bottom: 0.5rem;
+               padding-left: 0.5rem;
                font-weight: bold;
                color: #000;
+               position: absolute;
+               bottom: 50%;
             }
 
    /*END ACTIVITIES*/
@@ -568,6 +621,7 @@ footer {
    display: flex;
    justify-content: space-evenly;
    padding: 2rem 0rem;
+   margin-top: 2rem;
 }
    .footernav {
       display: flex;
