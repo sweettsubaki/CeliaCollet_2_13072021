@@ -37,7 +37,15 @@ header {
 /*CONTAINER*/
 
 /*FILTER*/
-
+.filter {
+    padding-left: 1rem;
+}
+.searchbar {
+    justify-content: center;
+}
+.categoryfilters {
+    justify-content: flex-start;
+}
 /*RESULTS*/
 .results {
     flex-direction: column-reverse;
@@ -46,6 +54,9 @@ header {
     .accomodations {
         background: none;
         width: 100%;
+    }
+    .more {
+        padding-left: 2rem;
     }
     /*Popular*/
     .popular {
@@ -78,5 +89,32 @@ header {
         padding-top: 0.5rem;
     }
 /*ACTIVITIES*/
+.fourcolumns {
+    flex-direction: column;
+    height: 1600px;
+}
+.col {
+    display: flex;
+    width: 100%;
+}
+.col2 {
+    display: flex;
+    align-items: center;
+}
+.row2 {
+    position: static;
+    bottom: none;
+    margin: 0.5rem;
 
+}
+
+.ActivityCards, .col1card, #firstactcard, #secactcard, #thirdactcard, #fourthactcard {
+    height: 360px;
+}
+.actpic, .doubleactpic, #secactpic, #firstactpic, .smallactpic, #thirdactpic, #fourthactpic {
+    height: 300px;
+}
+.capplace {
+    height: 50px;
+}
 /*FOOTER*/
