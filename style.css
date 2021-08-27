@@ -2,7 +2,7 @@
 body {
    font-family: 'Raleway', sans-serif;/*
    background-color: black;*/
-   max-width: 1200px;
+   max-width: 1440px;
    margin: auto;
 }
 
@@ -201,6 +201,11 @@ header {
    height: 10vh;
    max-width: 100%;
 }
+
+#logo ul {
+   list-style-type: none;
+}
+
 .navbar {
    width: 30%;
 }
@@ -216,11 +221,9 @@ header {
 
    }
       .mobile {
-         display: flex;
-         width: 90%;
       }
          .heb {
-            border-top: #0065fc 13px solid;
+            border-top: #0065fc 10px solid;
             padding: 1.3rem;
             transition-duration: 0.1s;
             border-bottom: 3px transparent solid;
@@ -235,6 +238,9 @@ header {
          font-weight: bold;
          color: #0065fc;
          padding-right: 50rem;
+      }
+      .mobilenav {
+         display: none;
       }
 /*END HEADER*/
 
@@ -252,21 +258,28 @@ header {
       align-items: center;
    }
       /*Search Bar*/
-      .icons {
-         height: 100%;
-         border-radius: 0.5rem 0rem 0rem 0.5rem;
+      .iconns {
+         height: 50px;
+         border-radius: 0.6rem 0rem 0rem 0.6rem;
          padding-left: 0.5rem;
-         flex: 0 0 100px;
+         flex: 0 0 55px;
+         position: relative;
+      }
+      .icons {
+         height: 20px;
+         position: absolute;
+         top: 25%;
+         left: 40%;
       }
       #searchbutton {
          /*Button outside style*/
          border: #F2F2F2 1px solid;
-         border-radius: 0rem 0.5rem 0.5rem 0rem;
+         border-radius: 0rem 0.6rem 0.6rem 0rem;
 
          /*Button inside style*/
          background-color: #0065fc;
          height: 100%;
-         flex: 0 0 200px;
+         flex: 0 0 135px;
 
          /*font style*/
          color: #ffffff;
@@ -275,7 +288,7 @@ header {
       .SearchForm {
          padding: 0 1.5%;
          height: 100%;
-         flex: 0 0 400px;
+         flex: 0 0 235px;
          border: #F2F2F2 0.5px solid;
       }
 
@@ -304,6 +317,7 @@ header {
          }
          .categorieslist {
             height: fit-content;
+            margin-top: 0.5rem;
             margin-right: 2rem;
             border: 2px solid #d9d9d9;
             border-radius: 2rem;
@@ -346,6 +360,7 @@ header {
    .results {
       width: 100%;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       height: fit-content;
       overflow: hidden;
@@ -497,7 +512,7 @@ header {
 
          .AsideStars {
             padding-top: 2rem;
-            padd
+            
          }
    /*END POPULAR*/
 
@@ -518,6 +533,7 @@ header {
          height: 455px;
          overflow: hidden;
          position: relative;
+         margin: 1rem;
       }
 
       /*1 Picture column*/
@@ -557,9 +573,7 @@ header {
             width: 100%;
             border-radius: 1rem 1rem 1rem 1rem;
             border: #F2F2F2;
-            padding: 0rem;
-            margin: 0rem;/*
-            border: black 2px solid;
+/*            border: black 2px solid;
             background-color: #ffffff;*/
          }
          #firstactcard {
@@ -584,7 +598,7 @@ header {
             }
             figure {
              margin-block: 0rem;
-             margin-inline: 0.5rem;  
+             margin-inline: 0rem;  
             }
             #firstactpic {
                height: 180px;

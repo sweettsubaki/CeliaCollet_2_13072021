@@ -4,8 +4,10 @@
 <head>
     <title>Reservia</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="all and (max-device-width: 480px)" href="mobiledevices.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    <link rel="stylesheet" media="all and (max-width: 480px)" href="mobiledevices.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 1024px)" href="tablet.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script></head>
 
@@ -14,14 +16,15 @@
     Navbar items 1&2 will go below on mobile view thanks to flexbox's align-self-->
     <header>
         <div id="logo">
-            <img src="/images/logo/Reservia.svg" alt="the Resevia logo which is the brand name written in the Raleway font">
+            <ul>
+                <li><img src="/images/logo/Reservia.svg" alt="the Resevia logo which is the brand name written in the Raleway font"></li>
+                <li class="mobilenav brightblue">S'inscrire</li>
+            </ul>
         </div>
         <nav class="navbar">
             <ul>
-                <div class="mobile">
-                    <li class="brightblue heb"><a class="navlink" id="nav1" href="#heb">Hébérgements</a></li>
-                    <li class="darkgrey act"><a class="navlink" id="nav2" href="#act">Activités</a></li>
-                </div>
+                <li class="brightblue heb mobile"><a class="navlink" id="nav1" href="#heb">Hébérgements</a></li>
+                <li class="darkgrey act mobile"><a class="navlink" id="nav2" href="#act">Activités</a></li>
                 <li class="nav brightblue">S'inscrire</li>
             </ul>
         </nav>
@@ -38,37 +41,38 @@
                     <h2 class="darkgrey">En plein centre ville ou en pleine nature</h2>
                 </div>
                 <form class="searchbar" method="POST" action="traitement.php">
-                    <i class="fas fa-map-marker-alt lightestgrey icons"></i>                    
+                    <div class="iconns lightestgrey">
+                    <i class="fas fa-map-marker-alt lightestgrey icons"></i></div>
                     <input class="SearchForm" type="search" placeholder="Marseille, France">
                     <button id="searchbutton">Recherchez</button>
                 </form>
                 <div class="categoryfilters">
                     <h3 id="filter">Filtres:</h3>
-                    <ul>
-                        <div class="categorieslist">
-                            <a class="catelink" href="#">
+                    <ul id="categoryfilters">
+                        <li>
+                            <a class="catelink categorieslist" href="#">
                                 <i class="fas fa-money-bill-wave FilterIcons"></i>
-                                <li class="category">Economique</li>
+                                <p class="category">Economique</p>
                             </a>
-                        </div>
-                        <div class="categorieslist">
-                            <a class="catelink" href="#">
+                        </li>
+                        <li>
+                            <a class="catelink categorieslist" href="#">
                                 <i class="fas fa-child FilterIcons"></i>
-                                <li class="category">Familial</li>
+                                <p class="category">Familial</p>
                             </a>
-                        </div>
-                        <div class="categorieslist">
-                            <a class="catelink" href="#">
+                        </li>
+                        <li>
+                            <a class="catelink categorieslist" href="#">
                                 <i class="fas fa-heart FilterIcons"></i>
-                                <li class="category">Romantique</li>
+                                <p class="category">Romantique</p>
                             </a>
-                        </div>
-                        <div class="categorieslist">
-                            <a class="catelink" href="#">
+                        </li>
+                        <li>
+                            <a class="catelink categorieslist" href="#">
                                 <i class="fas fa-dog FilterIcons"></i>                     
-                                <li class="category">Animaux autorisés</li>
+                                <p class="category">Animaux autorisés</p>
                             </a>
-                        </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -87,7 +91,7 @@
                     <div class="AccRow1">
                         <div class="Card">
                             <a class="cardlink" href="#">
-                                <img class="accpic" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                                <img class="accpic" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre avec lit superposés">
                                 <div class="AccTextCard">
                                     <div class="text">
                                         <h1 class="hotel hotel1">Auberge de la Cannebière</h1>
@@ -107,7 +111,7 @@
                         </div>
                         <div class="Card">
                             <a class="cardlink" href="#">
-                                <img class="accpic" src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                                <img class="accpic" src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre avec lit double">
                                 <div class="AccTextCard">
                                     <div class="text">
                                         <h1 class="hotel">Hôtel du port</h1>
@@ -293,9 +297,9 @@
                             <figure>
                                 <img class="actpic" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                             </figure>
-                            <figcaption class="capplace">
+                            <div class="capplace">
                                 <h2 class="placename">Vieux Port</h2>
-                            </figcaption>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -306,9 +310,9 @@
                                 <figure class="double">
                                     <img class="doubleactpic" id="firstactpic" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                                 </figure>
-                                <figcaption class="capplace">
+                                <div class="capplace">
                                     <h2 class="placename">Fort de Pomègues</h2>
-                                </figcaption>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -318,9 +322,9 @@
                                 <figure class="double">
                                     <img class="doubleactpic smallactpic" id="secactpic" src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
                                 </figure>
-                                <figcaption class="capplace">
+                                <div class="capplace">
                                     <h2 class="placename">Îles du Frioul</h2>
-                                </figcaption>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -331,9 +335,9 @@
                             <figure>
                                 <img class="actpic" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                             </figure>
-                            <figcaption class="capplace">
+                            <div class="capplace">
                                 <h2 class="placename">Parc National des Calanques</h2>
-                            </figcaption>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -344,9 +348,9 @@
                                 <figure class="double">
                                     <img class="doubleactpic" id="thirdactpic" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                                 </figure>
-                                <figcaption class="capplace">
+                                <div class="capplace">
                                     <h2 class="placename">Notre-Dame-de-la-Garde</h2>
-                                </figcaption>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -356,9 +360,9 @@
                                 <figure class="double">
                                     <img class="doubleactpic" id="fourthactpic" src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
                                 </figure>
-                                <figcaption class="capplace">
+                                <div class="capplace">
                                     <h2 class="placename">Parc Longchamp</h2>
-                                </figcaption>
+                                </div>
                             </a>
                         </div>
                     </div>
