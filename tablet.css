@@ -83,7 +83,6 @@ header {
     }
     .hotel {
         font-size: small;
-        padding
     }
     .AsideStars {
         padding-top: 0.5rem;
@@ -103,7 +102,7 @@ header {
 }
 .row2 {
     position: static;
-    bottom: none;
+    bottom: unset;
     margin: 0.5rem;
 
 }
