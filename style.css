@@ -31,7 +31,8 @@ a#nav2:visited {
    font-weight: bold;
 }
 a.navlink:hover {
-border-bottom: #003482 2px groove;
+   box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
+   border-bottom: #003482 2px groove;
 }
 /*Categories*/
 a.catelink {
@@ -54,25 +55,31 @@ a.catelink:visited {
    font-weight: bold;
    box-sizing: content-box;
 }
-.catelink a:hover
+.catelink a:hover {
+   box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
+   border-bottom: #003482 2px groove;
+}
 
 /*Results cards*/
    /*Accomodation cards*/
    a.cardlink {
       outline: none;
       text-decoration: none;
+      height: fit-content;
    }
    a.cardlink:link {
       outline: none;
       text-decoration: none;
+      height: fit-content;
    }
    a.cardlink:visited {
       outline: none;
       text-decoration: none;
       color: #0a50b9;
+      height: fit-content;
    }
    a.cardlink:hover {
-      box-shadow: #003482 4px;
+      box-shadow:  rgba(46, 98, 240, 0.5) 25px 3px;
    }
    /*Display More*/
    a.more {
@@ -98,7 +105,8 @@ a.catelink:visited {
       margin-left: 0.5rem;
    }
    a.more:hover {
-   border-bottom: #003482 2px groove;
+      box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
+      border-bottom: #003482 2px groove;
    }
 
    /*popular cards*/
@@ -107,12 +115,14 @@ a.catelink:visited {
       align-items: center;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
+      height: 150px;
    }
    a.popli:link {
       align-items: center;
       display: flex;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
+      height: 150px;
    }
    a.popli:visited {
       align-items: center;
@@ -120,9 +130,13 @@ a.catelink:visited {
       overflow: hidden;
       color: #0065fc;
       border-radius: 2rem 2rem 2rem 2rem;
+      height: 150px;
 
    }
-   a.popli:hover
+   a.popli:hover {
+      box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
+      border-bottom: #003482 2px groove;
+   }
 
 /*Activity cards*/
 a.actlink {
@@ -139,7 +153,10 @@ a.actlink:visited {
    color: #000;
    font-weight: bold;
 }
-.actlink a:hover
+.actlink a:hover {
+   box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
+   border-bottom: #003482 2px groove;
+}
 
 /*END LINKS*/
 
@@ -499,7 +516,7 @@ header {
             display: flex;
             flex-direction: column;
             width: 60%;
-            height: fit-content;
+            height: 145px;
             padding-left: 0.7rem;
          }
 
@@ -513,10 +530,8 @@ header {
             font-size: medium;
          }
 
-         .AsideStars {
-            padding-top: 2rem;
-            
-         }
+         .AsideStars        
+         
    /*END POPULAR*/
 
    /*ACTIVITIES*/
