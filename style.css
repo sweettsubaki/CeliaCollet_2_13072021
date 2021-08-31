@@ -194,6 +194,13 @@ h2 {
    margin-block: 0rem;
    margin-inline: 0rem;
 }
+h3 {
+   margin-block: 0rem;
+}
+h4 {
+   margin-block: 0rem;
+   font-size: small;
+}
 .bold {
    font-weight: bold;
 }
@@ -237,8 +244,6 @@ header {
       margin-top: -0.7rem;
 
    }
-      .mobile {
-      }
          .heb {
             border-top: #0065fc 10px solid;
             padding: 1.3rem;
@@ -267,6 +272,9 @@ header {
    max-height: 2000vh;
 }*/
    /*FILTER*/
+   .filterheader {
+      padding-bottom: 1rem;
+   }
    .searchbar {
       height: 50px;
       display: flex;
@@ -510,17 +518,11 @@ header {
          .textcard {
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
             width: 60%;
             height: 145px;
             padding-left: 0.7rem;
          }
-
-         .texteuh {/*
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;*/
-         }
-
          .hotel {
             font-size: medium;
          }
@@ -550,8 +552,7 @@ header {
       }
 
       /*1 Picture column*/
-      .col1 {
-      }
+
          .col1card {
             height: 450px;
          }
@@ -573,8 +574,6 @@ header {
             width: 100%;/*
             padding: 0rem;*/
          }
-         .row1 {
-         } /*to verify again*/
          .row2 {
             position: absolute;
             bottom: 1.1%;
