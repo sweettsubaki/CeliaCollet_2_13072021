@@ -115,14 +115,14 @@ a.catelink:visited {
       align-items: center;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
-      height: 150px;
+      height: 155px;
    }
    a.popli:link {
       align-items: center;
       display: flex;
       overflow: hidden;
       border-radius: 2rem 2rem 2rem 2rem;
-      height: 150px;
+      height: 155px;
    }
    a.popli:visited {
       align-items: center;
@@ -130,7 +130,7 @@ a.catelink:visited {
       overflow: hidden;
       color: #0065fc;
       border-radius: 2rem 2rem 2rem 2rem;
-      height: 150px;
+      height: 155px;
 
    }
    a.popli:hover {
@@ -419,7 +419,7 @@ header {
             box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             background-color: #ffffff;
             flex: 0 1 30%;
-            height: 200px;
+            height: 250px;
             width: 30%;
             overflow: hidden;
             margin: 1rem;
@@ -438,7 +438,7 @@ header {
                display: flex;
                flex-direction: column;
                justify-content: space-between; 
-               height: 83px;
+               height: 95px;
                width: 100%;
             }
             .hotel1 {
@@ -477,31 +477,26 @@ header {
       .threecards {
          display: flex;
          flex-direction: column;
-         justify-content: space-between;
+         justify-content: space-around;
          align-content: center;
          width: 80%;
-         height: fit-content;
+         height: 100%;
          margin-left: auto;
          margin-right: auto;
       }
       /*Each Card*/
       .AsideCard {
          display: flex;
-         justify-content: center;
+         justify-content: space-between;
          background-color: #ffffff;
-         height: 145px;
+         height: 160px;
          width: 95.58%;
          margin-top: 1rem;
          margin-bottom: 1rem;
          border-radius: 2rem 2rem 2rem 2rem;
          box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
+         padding-left: 0.4rem;
       }
-         .popcard {/*
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;*/
-            padding: 0.3rem;
-         }
 
          /*Pictures*/
          .poppic {
