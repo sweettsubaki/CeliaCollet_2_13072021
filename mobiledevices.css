@@ -61,10 +61,10 @@ display: none;}
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
 }
 .actualfilters {
-    height: 50vh;
+    height: 60vh;
 }
 .filterheader {
     max-width: 90%;
@@ -153,13 +153,14 @@ display: flex;
     }
         /*Each Card*/
         .Card {
-            width: 75% !important;
-            height: 200px !important;
             margin: 0.5rem !important;
         }
         /*Pictures*/
         .accpic, .accpic2 {
             height: 115px;
+        }
+        .AccTextCard {
+            height: 70px;
         }
 
     /*POPULAR*/
@@ -168,11 +169,26 @@ display: flex;
         width: 100%;
         height: 100vh;
     }
+    .popularheader {
+        font-size: small;
+    }
         /*Card Block*/
-        .threecards
+        .threecards {
+            width: 90%;
+            margin-left: 2rem;
+        }
             /*Each card*/
             .AsideCard {
                 width: 90%;
+            }/*
+            .hotel {
+                font-size: small;
+            }*/
+            .texteuh {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 50%;
             }
 
 /*ACTIVITIES*/
@@ -213,12 +229,17 @@ display: flex;
         height: 190px !important;
         width: 95% !important;
         overflow: hidden !important;
+        margin: 0.1rem;
+    }
+    .ActivityCards {
+        margin-right: 0rem;
+        width: 100% !important;
     }
     
         /*Pictures*/
     
         .actpic, .doubleactpic, .smallactpic {
-            max-width: 325px !important;
+            max-width: 100% !important;
             height: 130px !important;
         }
         .capplace {height: 60px;}

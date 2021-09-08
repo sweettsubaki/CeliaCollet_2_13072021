@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" media="all and (max-width: 480px)" href="mobiledevices.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
     <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 1024px)" href="tablet.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script></head>
 
 <body>
@@ -51,34 +51,44 @@
                     <h3 id="filter">Filtres:</h3>
                     <ul id="categoryfilters">
                         <li>
-                            <a class="catelink categorieslist" href="#">
-                                <i class="fas fa-money-bill-wave FilterIcons"></i>
+                            <div class="Categoryicon">
+                                <div class="wrapicon">
+                                    <i class="fas fa-money-bill-wave FilterIcons"></i>
+                                </div>
                                 <p class="category">Economique</p>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a class="catelink categorieslist" href="#">
-                                <i class="fas fa-child FilterIcons"></i>
+                            <div class="Categoryicon">
+                                <div class="wrapicon">
+                                    <i class="fas fa-child FilterIcons"></i>
+                                </div>
                                 <p class="category">Familial</p>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a class="catelink categorieslist" href="#">
-                                <i class="fas fa-heart FilterIcons"></i>
+                            <div class="Categoryicon">
+                                <div class="wrapicon">
+                                    <i class="fas fa-heart FilterIcons"></i>
+                                </div>
                                 <p class="category">Romantique</p>
-                            </a>
+                            </div>
                         </li>
                         <li>
-                            <a class="catelink categorieslist" href="#">
-                                <i class="fas fa-dog FilterIcons"></i>                     
+                            <div class="Categoryicon">
+                                <div class="wrapicon">
+                                    <i class="fas fa-dog FilterIcons"></i>                     
+                                </div>
                                 <p class="category">Animaux autorisés</p>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="nbacomodations darkgrey">
-                <i class="fas fa-info-circle infoicon"></i>
+            <div class="nbacomodations">
+                <div class="wrapinfoicon">
+                    <i class="fas fa-info infoicon"></i>
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette vide.</p>
             </div>
         </section>
@@ -214,27 +224,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="more bold">
+                <div class="SeeMore bold">
                     <a class="more" href="#">
-                    <h1>afficher plus</h1>
-                </a>
+                        <h1>afficher plus</h1>
+                    </a>
                 </div>
             </section>
             
             <!-- Part 2: Popular Ads -->
-            <aside class="popular lightestgrey">
+            <aside class="lightestgrey popular">
                 <div class="popularheader">
                     <h1 class="title2">Les Plus Populaires</h1>
-                    <a href="#"><img class="graph" src="images/chart-line-solid.svg" alt="graph icon"></a>
+                    <img class="graph" src="images/chart-line-solid.svg" alt="graph icon">
                 </div>
                 <div class="threecards">
-                    <div class="AsideCard popcard">
-                        <a class="cardlink popli" href="#">
+                    <a class="cardlink popli" href="#">
+                        <div class="AsideCard popcard">
                             <img class="poppic" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre aux murs vert bouteille et lit double">
                             <div class="textcard">
                                 <div class="texteuh">
-                                <h3 class="hotel">Hôtel Le soleil du matin</h3>
-                                <h4>Nuit à partir de 128<span class="bold">€</span></h4>
+                                    <h3 class="hotel">Hôtel Le soleil du matin</h3>
+                                    <h4>Nuit à partir de 128<span class="bold">€</span></h4>
                                 </div>
                                 <div class="rank AsideStars">
                                     <ul>
@@ -246,14 +256,16 @@
                                     </ul>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="AsideCard popcard">
-                        <a class="cardlink popli" href="#">
+                        </div>
+                    </a>
+                    <a class="cardlink popli" href="#">
+                        <div class="AsideCard popcard">
                             <img class="poppic" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre aux thèmes noir/gris/beige/blanc et lit double.">
                             <div class="textcard">
-                                <h3 class="hotel">Au coeur de l'eau <br/>Chambre d'hôtes</h3>
-                                <h4>Nuit à partir de 71<span class="bold">€</span></h4>
+                                <div class="texteuh">
+                                    <h3 class="hotel">Au coeur de l'eau <br/>Chambre d'hôtes</h3>
+                                    <h4>Nuit à partir de 71<span class="bold">€</span></h4>
+                                </div>
                                 <div class="rank AsideStars">
                                     <ul>
                                         <li><i class="fas fa-star brightblue"></i></li>
@@ -264,14 +276,16 @@
                                     </ul>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="AsideCard popcard">
-                        <a class="cardlink popli" href="#">
+                        </div>
+                    </a>
+                    <a class="cardlink popli" href="#">
+                        <div class="AsideCard popcard">
                             <img class="poppic lastpic" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre blanche avec sol et tête de lit en bois/parquet">
                             <div class="textcard">
-                                <h3 class="hotel">Hôtel Tout bleu et Blanc</h3>
-                                <h4>Nuit à partir de 68<span class="bold">€</span></h4>
+                                <div class="texteuh">
+                                    <h3 class="hotel">Hôtel Tout bleu et Blanc</h3>
+                                    <h4>Nuit à partir de 68<span class="bold">€</span></h4>
+                                </div>
                                 <div class="rank AsideStars">
                                     <ul>
                                         <li><i class="fas fa-star brightblue"></i></li>
@@ -282,8 +296,8 @@
                                     </ul>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </aside>
         </section>
@@ -321,7 +335,7 @@
                         <div class="ActivityCards" id="secactcard">
                             <a class="actlink" href="#">
                                 <figure class="double">
-                                    <img class="doubleactpic smallactpic" id="secactpic" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo représentant une longue vue dirigée vers l'une des îles de l'archipel du Frioul en arrière plan.">
+                                    <img class="doubleactpic smallactpic" id="secactpic" src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo représentant une longue vue dirigée vers l'une des îles de l'archipel du Frioul en arrière plan.">
                                 </figure>
                                 <div class="capplace">
                                     <h2 class="placename">Îles du Frioul</h2>
