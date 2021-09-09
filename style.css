@@ -483,8 +483,7 @@ header {
             border-radius: 2rem 2rem 2rem 2rem;
             box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13);
             background-color: #ffffff;
-            flex: 0 1 30%;/*
-            height: 250px;*/
+            flex: 0 1 30%;
             width: 30%;
             overflow: hidden;
             margin: 1rem;
@@ -500,14 +499,14 @@ header {
                width: 100%;
                object-fit: cover;
                border-radius: 2rem 2rem 0rem 0rem;
-               height: 115px;
+               height: 130px;
             }
             /*Text*/
             .AccTextCard {
                display: flex;
                flex-direction: column;
                justify-content: space-between; 
-               height: 95px;
+               height: 75px;
                width: 100%;
                padding: 0.5rem;
             }
