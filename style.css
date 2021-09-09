@@ -84,8 +84,8 @@ a.catelink:link {
       text-decoration: none;
    }
    a.more:hover {
-      box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
       border-bottom: #003482 2px groove;
+      transform: scale(1.2);
    }
 
    /*popular cards*/
@@ -110,8 +110,7 @@ a.actlink:visited {
    font-weight: bold;
 }
 .actlink a:hover {
-   box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 49, 240, 0.3) 10px 10px, rgba(46, 82, 240, 0.2) 15px 15px, rgba(46, 98, 240, 0.1) 20px 20px, rgba(46, 98, 240, 0.05) 25px 25px;
-   border-bottom: #003482 2px groove;
+   transform: scale(1.09);
 }
 
 /*END LINKS*/
@@ -126,7 +125,6 @@ a.actlink:visited {
 }
 .lightestgrey {
    background-color: #F2F2F2;
-   border-radius: 2rem;
 }
 .lightgrey {
    color: #d9d9d9;
@@ -329,10 +327,10 @@ header {
 
             .FilterIcons {
                color: #0065fc;
-               height: 1.5rem;
-               width: 1.5rem;
-               min-height: 1.5rem;
-               min-width: 1.5rem;
+               height: 1.2rem;
+               width: 1.2rem;
+               min-height: 1.2rem;
+               min-width: 1.2rem;
                display: flex;
                align-items: center;
                justify-content: center;
@@ -385,13 +383,14 @@ header {
       list-style-type: none;
       display: flex;
       margin: 0rem;
-      margin-block-start: 0rem;
+      margin-block: 0rem;
+      padding-inline: 0rem;
    }
 
 
    .accomodations {
       width: 69%;
-      border-radius: 2rem 2rem 2rem 2rem;
+      border-radius: 2rem;
    }
    
    aside {
@@ -399,15 +398,16 @@ header {
       width: 30%;
       flex-direction: column;
       justify-content: space-evenly;
-      border-radius: 2rem 2rem 2rem 2rem;
+      border-radius: 2rem;
    }
    
-   aside .popularheader{
+   .popularheader{
       display: flex;
       color: #000;
       justify-content: space-between;
       align-items: center;
       padding-right: 3rem;
+      padding-top: 1.5rem;
    }
 
    .graph {
@@ -519,9 +519,12 @@ header {
                display: flex;
                flex-direction: column;
                justify-content: space-between;
-            }            }
-   /*Display More*/
+            }           
 
+   /*Display More*/
+      .SeeMore {
+         padding: 1rem;
+      }
    /*END ACCOMODATIONS*/
 
    /*POPULAR*/     
