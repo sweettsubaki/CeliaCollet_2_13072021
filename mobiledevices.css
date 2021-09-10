@@ -35,22 +35,24 @@ header {
     width: 100% !important;
     padding: 0rem;
 }
-    
 
     .heb {
-    border-top: 0px transparent solid;
-    border-bottom: 3px #0065fc solid;
-    padding: 0.5rem;
-    width: 50%;
-    text-align: center;
+        border-top: 0px transparent solid;
+        border-bottom: 3px #0065fc solid;
+        padding: 0.5rem;
+        width: 50%;
+        text-align: center;
     }
     .act {
+        color: #000;
         border-bottom: 3px #f2f2f2 solid;
         padding: 0.5rem;
         width: 50%;
         text-align: center;
     }
-    
+    #nav1 {
+        color: #0065fc;
+    }    
 .nav {
 display: none;}
 
@@ -174,16 +176,19 @@ display: flex;
     }
         /*Card Block*/
         .threecards {
-            width: 90%;
-            margin-left: 2rem;
+            width: 85%;
+            margin: 1rem;
+            justify-content: flex-start;
+            height: fit-content;
         }
             /*Each card*/
             .AsideCard {
-                width: 90%;
-            }/*
+                width: 100%;
+                margin: 0.3rem;
+            }
             .hotel {
-                font-size: small;
-            }*/
+                color: #000;
+            }
             .texteuh {
                 display: flex;
                 flex-direction: column;
@@ -226,7 +231,7 @@ display: flex;
         border-radius: 2rem 2rem 2rem 2rem !important;
         box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.13) !important;
         background-color: #ffffff !important;
-        height: 190px !important;
+        height: 180px !important;
         width: 95% !important;
         overflow: hidden !important;
         margin: 0.1rem;
@@ -234,6 +239,7 @@ display: flex;
     .ActivityCards {
         margin-right: 0rem;
         width: 100% !important;
+        border-radius: 1rem !important;
     }
     
         /*Pictures*/
@@ -242,7 +248,10 @@ display: flex;
             max-width: 100% !important;
             height: 130px !important;
         }
-        .capplace {height: 60px;}
+        .capplace {
+            height: 60px;
+            padding-left: 0.5rem;
+        }
         .placenames {
             height: 55px;
         }

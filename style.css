@@ -9,13 +9,11 @@ body {
 /*links*/
 /*header*/
 a.navlink {
-   color: #000;
    outline: none;
    text-decoration: none;
    font-weight: bold;
 }
 a.navlink:link {
-   color: #000;
    outline: none;
    text-decoration: none;
    font-weight: bold;
@@ -203,6 +201,9 @@ header {
       border-bottom: 3px transparent solid;
       padding: 1.5rem;
 
+   }
+   .navlink {
+      color: #000;
    }
       .nav {
          font-weight: bolder;
