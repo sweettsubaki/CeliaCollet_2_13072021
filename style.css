@@ -141,8 +141,8 @@ h1 {
    margin: 00.4rem;
 }
 h2 {
+   font-weight: bold;
    font-size: small;
-   font-weight: unset;
    margin: 0.4rem;
    margin-block: 0rem;
    margin-inline: 0rem;
@@ -171,7 +171,6 @@ h5 {
 }
 .title2 {
    font-size: x-large;
-   margin-top: 1rem;
    margin-left: 1rem;
 }
 /*END TITLES*/
@@ -215,15 +214,19 @@ header {
 /*END HEADER*/
 
 
-/*CONTAINER*//*
+/*CONTAINER*/
 .container {
-   max-height: 2000vh;
-}*/
+   padding-top: 2rem;
+}
    /*FILTER*/
    .filterheader {
-      padding-bottom: 1rem;
+      padding-top: 2rem;
    }
+      .h2margin {
+         margin: 0.8rem;
+      }
    .searchbar {
+      margin: 0.5rem;
       height: 50px;
       display: flex;
       width: 100%;
@@ -267,15 +270,20 @@ header {
          flex: 0 0 235px;
          border: #F2F2F2 0.5px solid;
       }
+      .SearchForm::placeholder {
+         font-weight: bold;
+         color: #000;
+      }
 
       /*Category Filters*/
       .filter {
+         height: 40vh;
          width: 80%;
       }
       .categoryfilters {
          display: flex;
          align-items: center;
-         
+         margin-top: 1rem;
       }
          #filter {
             margin: 2%;
@@ -351,9 +359,9 @@ header {
             }
       /*Number of accomodations exiting*/
       .nbacomodations {
+         margin-top: 0.5rem;
          display: inline-flex;
          align-items: center;
-         font-weight: 600;
       }
       .wrapinfoicon {
          height: 2rem;
@@ -416,7 +424,7 @@ header {
    }
 
    .graph {
-      height: 2rem;
+      height: 1.5rem;
    }
 
    
@@ -467,6 +475,14 @@ header {
             width: 95%;
             height: 40%;
          }
+
+         span:after {
+            content: ' ';
+         }
+         span.firstspanrow {
+            display: block;
+         }
+         .secspanrow
          .hotel {
             font-size: medium;
             color: #000
@@ -644,6 +660,8 @@ header {
                color: #000;
                position: absolute;
                bottom: 50%;
+               font-size: small;
+               margin: 0.4rem;
             }
 
    /*END ACTIVITIES*/
@@ -655,6 +673,12 @@ footer {
    padding: 2rem 0rem;
    margin-top: 2rem;
 }
+   .footertitle{
+      font-weight: bold;
+      font-size: large;
+      margin: 00.4rem;
+   }
+
    .footernav {
       display: flex;
       flex-direction: column;

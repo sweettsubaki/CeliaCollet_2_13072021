@@ -26,22 +26,31 @@ a.popli {
 
 /*HEADER*/
 header {
-    justify-content: stretch;
-    align-items: normal;
+    justify-content: space-between;
+    align-items: center;
 }
 .navbar {
     margin-top: 0.5rem;
+    width: 50%;
+}
+.navbar ul {
+    width: 90%;
+    align-items: center;
 }
 .heb {
-    border: 2px #0065fc groove;
     border-radius: 2rem;
+    padding: 0.5rem;
+    background: #d4d4d4;
 }
 
 /*CONTAINER*/
-
+.container {
+    padding-top: 0rem;
+}
 /*FILTER*/
 .filter {
     padding-left: 1rem;
+    height: 27vh;
 }
 .searchbar {
     justify-content: center;
@@ -52,6 +61,7 @@ header {
 /*RESULTS*/
 .results {
     flex-direction: column-reverse;
+    margin-top: 0rem;
 }
     /*Accomodations*/
     .accomodations {
@@ -64,29 +74,47 @@ header {
     /*Popular*/
     .popular {
         width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .popularheader {
+        margin: 1rem;
     }
     .threecards {
         flex-direction: row;
         width: 95%;
     }
     .AsideCard {
-        height: 190px;
-        width: 30%;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 170px;
+        width: 230px;
+        margin: 0.5rem;
     }
     .poppic {
-        width: 100%;
-        height: 100px;
+        width: 225px;
+        height: 60%;
         border-radius: 2rem 2rem 0rem 0rem;
         padding-right: 0.5rem;
     }
     .textcard {
         padding: 2px;
-        width: 100%;
-        height: 100px;
+        width: 225px;
+        height: 200px;
         font-size: smaller;
+    }
+    .texteuh {
+        height: 60%;
+        width: 225px;
+    }
+    span.firstspanrow {
+        display: inline;
+    }
+    span.firstspanrow::after {
+        content: ' -';
     }
     .hotel {
         font-size: medium;
+        padding: 0.2rem;
     }
     .AsideStars {
         padding-top: 0.5rem;
