@@ -147,6 +147,12 @@ h2 {
    margin-block: 0rem;
    margin-inline: 0rem;
 }
+.h2 {
+   font-size: large;
+}
+.p {
+   font-weight: 600;
+}
 h3 {
    margin-block: 0rem;
 }
@@ -180,7 +186,8 @@ h5 {
 header {
    display: flex;
    justify-content: space-between;
-   height: 6vh;
+   align-items: center;
+   height: 10vh;
    max-width: 100%;
 }
 
@@ -214,14 +221,11 @@ header {
 /*END HEADER*/
 
 
-/*CONTAINER*/
+/*CONTAINER*//*
 .container {
    padding-top: 2rem;
-}
+}*/
    /*FILTER*/
-   .filterheader {
-      padding-top: 2rem;
-   }
       .h2margin {
          margin: 0.8rem;
       }
