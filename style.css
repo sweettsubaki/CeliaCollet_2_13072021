@@ -55,10 +55,12 @@ a.catelink:link {
    a.cardlink {
       outline: none;
       text-decoration: none;
+      color: #000;
    }
    a.cardlink:link {
       outline: none;
       text-decoration: none;
+      color: #000;
    }
    a.cardlink:visited {
       outline: none;
@@ -87,7 +89,10 @@ a.catelink:link {
    }
 
    /*popular cards*/
-
+   a.popli {
+      text-decoration: none;
+      color: #000;
+   }
    a.popli:hover {
       transform: scale(1.09);
    }
