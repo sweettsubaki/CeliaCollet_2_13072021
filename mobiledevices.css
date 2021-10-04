@@ -14,6 +14,13 @@ a.navlink:visited {
     color: #0065fc;
 }
 
+a#nav2:active, a#nav1:active {
+    color: #0065fc;
+}
+a#nav2:hover, a#nav1:hover {
+    color: #0065fc;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -48,6 +55,9 @@ header {
     padding: 0rem;
 }
 
+.mobile:active, .mobile:hover {
+    color: #0065fc;
+}
     .heb {
         border-top: none;
         border-bottom: 3px #d4d4d4 solid;
@@ -58,10 +68,14 @@ header {
     .heb:active {
         border-top: 0px transparent solid;
         border-bottom: 3px #0065fc solid;
+        color: #0065fc;
+
     }
     .heb:hover {
         border-top: 0px transparent solid;
         border-bottom: 3px #0065fc solid;
+        color: #0065fc;
+        
     }
     .act {
         color: #000;
@@ -73,16 +87,21 @@ header {
     .act:active {
         border-top: 0px transparent solid;
         border-bottom: 3px #0065fc solid;
+        color: #0065fc;
+
     }
     .act:hover {
         border-top: 0px transparent solid;
         border-bottom: 3px #0065fc solid;
+        color: #0065fc;
+
     }
     #nav1, #nav2 {
         color: #000;
     }    
 .nav {
-display: none;}
+display: none;
+}
 
 /*CONTAINER*/
 

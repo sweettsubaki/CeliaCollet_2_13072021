@@ -11,13 +11,11 @@ body {
 a.navlink {
    outline: none;
    text-decoration: none;
-   font-weight: bold;
    color: #000;
 }
 a.navlink:link {
    outline: none;
    text-decoration: none;
-   font-weight: bold;
 }
 a#nav1:visited {
    color: #003482;
@@ -33,8 +31,8 @@ a#nav2:visited {
 
 }
 a.navlink:hover {
-   border-top: #0065fc 6px solid;
-   padding-top: 2rem;
+   border-top: #0065fc 3px solid;
+   padding-top: 1.2rem;
    color: #0065fc;
 }
 /*Categories*/
