@@ -33,7 +33,7 @@ a#nav2:visited {
 
 }
 a.navlink:hover {
-   border-top: #0065fc 3px solid;
+   border-top: #0065fc 6px solid;
    padding-top: 2rem;
    color: #0065fc;
 }

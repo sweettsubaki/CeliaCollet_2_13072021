@@ -8,7 +8,7 @@ a.navlink {
 }
 a.navlink:hover {
     border-top: none;
-    color: #000;
+    color: #0065fc;
 }
 a.navlink:visited {
     color: #0065fc;
