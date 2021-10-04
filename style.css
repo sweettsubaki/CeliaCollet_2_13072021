@@ -12,6 +12,7 @@ a.navlink {
    outline: none;
    text-decoration: none;
    font-weight: bold;
+   color: #000;
 }
 a.navlink:link {
    outline: none;
